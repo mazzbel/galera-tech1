@@ -1,0 +1,127 @@
+       *{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(179, 6, 6);
+    width: 100%;
+    padding: 30px;
+}
+header h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+header p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 15px;
+   
+}
+header p span {
+    color: blue;
+    font-style: italic;
+}
+.verde{
+    color: green;}
+
+.azul{
+ color: blue;
+}
+nav{
+
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 20%;
+}
+nav ul li{
+    list-style-type: none;
+    width: 90%;
+    border-bottom: 2px solid #141414;
+    padding-bottom: 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    line-height: 50px;
+}
+nav ul li a:hover{
+    color: rgb(196, 0, 0);
+}
+main{
+    background-color: rgb(253, 253, 253);
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
+main p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+
+}
+aside{
+    background-color: rgb(179, 6, 6);
+    float: left;
+    width: 20%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px #141414;
+    /* 1º é pros lados, 2º para cima ou para baixo, 3º desfoque*/
+}
+footer{
+    background-color: rgb(179, 6, 6);
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+footer p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: center;
+    color: rgb(255, 254, 254);
+}
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    line-height: 50px;
+}
+footer a:hover{
+    color: rgb(252, 250, 250);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:800px) {
+     aside{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main {
+        width: 80%;
+        margin-left: 5%;
+    }
+    footer{
+        height: auto;
+    }
+   
+}
+@media only screen and (max-width:500px) {
+    nav, main, aside{
+        width: 100%;
+        margin-bottom: 20px;
+    }footer{
+        height: auto;
+
+    }
+}
